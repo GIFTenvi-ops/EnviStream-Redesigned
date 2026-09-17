@@ -6,7 +6,7 @@ import { QUICK_REPLIES, getAnswer, GREETING } from "../data/assistant";
 import { reduced } from "../anim/ui";
 
 /**
- * Popup chatbot — floating navy bubble (above the WhatsApp float)
+ * Popup chatbot - floating navy bubble (above the WhatsApp float)
  * opening a GSAP-animated chat panel. Navy / sky / white themed,
  * offline rule-based answers, callback + deep-link actions.
  */
@@ -129,7 +129,7 @@ export default function ChatbotPopup({ onEnquire }) {
           <span className="flex-1 min-w-0">
             <span className="block text-[14px] font-bold leading-tight">Eduskill Assistant</span>
             <span className="flex items-center gap-1.5 text-[11px] text-violet-200/80">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" /> Online — replies instantly
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" /> Online - replies instantly
             </span>
           </span>
           <button onClick={toggle} aria-label="Close chat" className="w-8 h-8 grid place-items-center rounded-lg hover:bg-white/10 text-white/70 hover:text-white transition">

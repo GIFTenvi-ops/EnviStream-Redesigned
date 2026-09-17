@@ -23,7 +23,7 @@ export const markBooted = () => {
   try {
     sessionStorage.setItem("evs-booted", "1");
   } catch {
-    /* private mode — replay loader next visit */
+    /* private mode - replay loader next visit */
   }
 };
 
@@ -147,7 +147,7 @@ export function MaskReveal({ children, className = "", from = "left" }) {
 }
 
 /**
- * Parallax — professional scroll-linked drift (scrub).
+ * Parallax - professional scroll-linked drift (scrub).
  * speed: percent of own height to travel (positive = sinks as you scroll).
  * Wraps content; never affects layout (transform only).
  */
@@ -177,7 +177,7 @@ export function Parallax({ children, speed = 10, className = "" }) {
 }
 
 /**
- * Stagger — professional grouped entrance.
+ * Stagger - professional grouped entrance.
  * Direct children rise in with a tight expo stagger on scroll enter.
  */
 export function Stagger({ children, className = "", stagger = 0.09, y = 34 }) {
@@ -209,7 +209,7 @@ export function Stagger({ children, className = "", stagger = 0.09, y = 34 }) {
 }
 
 /**
- * useHeroIntro — cinematic hero timeline (professional studio standard).
+ * useHeroIntro - cinematic hero timeline (professional studio standard).
  * Plays once the loader lifts (booted === true):
  *  badge drops in → headline lines mask up (stagger) → para rises →
  *  CTAs pop in stagger → visual clip-reveals with settle zoom →

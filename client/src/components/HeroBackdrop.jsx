@@ -4,7 +4,7 @@ import { reduced } from "../anim/ui";
 /**
  * Transparent orange/gray tech backdrop: slow-drifting particles (orange/gray,
  * low opacity) with slight mouse response + a slow moving light beam.
- * Canvas 2D is used deliberately over Three.js here — cheaper, sharper
+ * Canvas 2D is used deliberately over Three.js here - cheaper, sharper
  * for tiny particles, and the content stays the focus.
  */
 export default function HeroBackdrop() {

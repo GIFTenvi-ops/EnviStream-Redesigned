@@ -28,7 +28,7 @@ export default function CourseDetail({ onEnquire }) {
 
   return (
     <main className="font-poppins bg-white">
-      {/* 1 — header — navy */}
+      {/* 1 - header - navy */}
       <section className="bg-slate-950 relative overflow-hidden">
         <div className="absolute inset-0 hero-grid-dark opacity-20" aria-hidden />
         <div className="container-x relative py-14">
@@ -49,7 +49,7 @@ export default function CourseDetail({ onEnquire }) {
         </div>
       </section>
 
-      {/* 2 — content — white */}
+      {/* 2 - content - white */}
       <section className="bg-white">
         <div className="container-x py-12 grid lg:grid-cols-[1fr_340px] gap-8">
         <div>

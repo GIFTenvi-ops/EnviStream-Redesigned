@@ -42,14 +42,14 @@ export default function Courses() {
 
   return (
     <main className="font-poppins bg-white">
-      {/* 1 — header — navy */}
+      {/* 1 - header - navy */}
       <section className="bg-slate-950 relative overflow-hidden">
         <div className="absolute inset-0 hero-grid-dark opacity-20" aria-hidden />
         <div className="container-x relative py-14">
           <Reveal>
             <p className="text-[12px] font-bold uppercase tracking-[.16em] text-violet-300">Courses → Technology → Program → Apply</p>
             <h1 className="font-display font-extrabold text-white text-3xl sm:text-5xl tracking-tight mt-3">All programs, one mega menu away</h1>
-            <p className="text-violet-100/80 mt-3 max-w-2xl">Use the <strong className="text-white">Courses</strong> mega menu above to browse by technology — or search everything below.</p>
+            <p className="text-violet-100/80 mt-3 max-w-2xl">Use the <strong className="text-white">Courses</strong> mega menu above to browse by technology - or search everything below.</p>
           </Reveal>
           <div className="mt-6 flex flex-col sm:flex-row gap-3 max-w-2xl">
             <label className="flex-1 flex items-center gap-2 rounded-xl bg-white border border-white text-slate-950 px-4 py-3 shadow-sm">
@@ -64,7 +64,7 @@ export default function Courses() {
         </div>
       </section>
 
-      {/* 2 — listing — sky (white cards) */}
+      {/* 2 - listing - sky (white cards) */}
       <section className="bg-violet-100 border-t border-violet-200">
         <div className="container-x py-12">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

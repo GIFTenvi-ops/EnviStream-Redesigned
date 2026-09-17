@@ -3,7 +3,7 @@ import { FiFacebook, FiInstagram, FiLinkedin, FiYoutube, FiTwitter, FiMail, FiPh
 import Logo from "./Logo";
 
 /**
- * Footer — deep blue brand + contact beside a start-learning CTA card.
+ * Footer - deep blue brand + contact beside a start-learning CTA card.
  * Professional rhythm: blue surfaces, orange action accents, white/gray text.
  */
 export default function Footer() {
@@ -49,7 +49,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* CTA card — deep blue glass with orange action accent */}
+        {/* CTA card - deep blue glass with orange action accent */}
         <div className="relative rounded-[22px] overflow-hidden border border-blue-400/25 bg-gradient-to-br from-slate-900/80 via-slate-950/70 to-slate-900/80 backdrop-blur-2xl p-8 sm:p-10">
           <div className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-fuchsia-500/20 blur-[90px]" aria-hidden />
           <div className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-blue-500/25 blur-[90px]" aria-hidden />

@@ -98,7 +98,7 @@ export const COURSES = [
     slug: "python-programming",
     name: "Python Programming",
     category: "Development",
-    tagline: "The perfect first language — from zero to automation",
+    tagline: "The perfect first language - from zero to automation",
     desc: "Core Python, OOP, APIs, automation, Django basics and 12 mini-projects. Ideal for students & career switchers.",
     duration: "3 Months",
     mode: "Online + Offline",
@@ -208,27 +208,27 @@ export const TESTIMONIALS = [
   { name: "Rahul Verma", role: "Data Analyst @ Fintech Startup", college: "B.Com + Data Science", course: "Data Science & Analytics", text: "Mentors reviewed every dashboard personally. Placement team arranged 6 interviews and helped me negotiate my first offer.", rating: 5 },
   { name: "Sneha Patel", role: "MERN Developer Intern", college: "MCA, 2024", course: "Full Stack Development", text: "GSAP + MERN capstone made my portfolio stand out. I went from zero to deploying full apps with auth and payments.", rating: 5 },
   { name: "Arjun Mehta", role: "Cybersecurity Trainee", college: "BCA Cybersecurity", course: "Cybersecurity", text: "SOC labs and CTFs felt like a real security job. Certificate verification helped my employer trust my credentials instantly.", rating: 5 },
-  { name: "Priya Nair", role: "Python Developer", college: "B.Sc IT", course: "Python Programming", text: "As a non-CS student I feared coding. The trainers made Python so practical — automation scripts I use at work daily.", rating: 5 },
+  { name: "Priya Nair", role: "Python Developer", college: "B.Sc IT", course: "Python Programming", text: "As a non-CS student I feared coding. The trainers made Python so practical - automation scripts I use at work daily.", rating: 5 },
   { name: "Karthik Reddy", role: "Performance Marketer", college: "MBA Marketing", course: "Digital Marketing & AEO", text: "AEO module is ahead of everyone else. I now optimize clients for ChatGPT and Google AI Overviews, not just old SEO.", rating: 5 },
 ];
 
 export const BLOGS = [
-  { slug: "ai-career-roadmap-2026", title: "AI Career Roadmap 2026: From Student to AI Engineer", cat: "Career Guide", read: "8 min read", date: "Sep 2026", excerpt: "Exact skills, projects and timeline to go from zero to AI-ready — including GenAI, RAG and agents." },
+  { slug: "ai-career-roadmap-2026", title: "AI Career Roadmap 2026: From Student to AI Engineer", cat: "Career Guide", read: "8 min read", date: "Sep 2026", excerpt: "Exact skills, projects and timeline to go from zero to AI-ready - including GenAI, RAG and agents." },
   { slug: "what-is-aeo-geo", title: "What is AEO & GEO? Ranking in ChatGPT and AI Overviews", cat: "AI Resources", read: "6 min read", date: "Aug 2026", excerpt: "Traditional SEO is not enough. Learn how answer-engine optimization decides who AI cites." },
-  { slug: "internship-vs-course", title: "Internship vs Course: What Actually Gets You Hired?", cat: "Student Resources", read: "5 min read", date: "Aug 2026", excerpt: "Recruiters reveal what matters more — certificates or shipped projects? Data inside." },
+  { slug: "internship-vs-course", title: "Internship vs Course: What Actually Gets You Hired?", cat: "Student Resources", read: "5 min read", date: "Aug 2026", excerpt: "Recruiters reveal what matters more - certificates or shipped projects? Data inside." },
   { slug: "mern-vs-nextjs", title: "MERN vs Next.js in 2026: Which Should You Learn First?", cat: "Web Dev", read: "7 min read", date: "Jul 2026", excerpt: "Honest breakdown for students choosing their first full-stack path with job data." },
-  { slug: "data-analyst-portfolio", title: "7 Dashboard Projects That Get Data Analyst Interviews", cat: "Data", read: "6 min read", date: "Jul 2026", excerpt: "Copy these portfolio projects to 3x your callbacks — with datasets included." },
-  { slug: "cybersecurity-beginner-guide", title: "Cybersecurity for Beginners: Labs, Certs & First Job", cat: "Security", read: "9 min read", date: "Jun 2026", excerpt: "From networking basics to SOC analyst — a practical no-hype starter plan." },
+  { slug: "data-analyst-portfolio", title: "7 Dashboard Projects That Get Data Analyst Interviews", cat: "Data", read: "6 min read", date: "Jul 2026", excerpt: "Copy these portfolio projects to 3x your callbacks - with datasets included." },
+  { slug: "cybersecurity-beginner-guide", title: "Cybersecurity for Beginners: Labs, Certs & First Job", cat: "Security", read: "9 min read", date: "Jun 2026", excerpt: "From networking basics to SOC analyst - a practical no-hype starter plan." },
 ];
 
 export const FAQS = [
-  { q: "Who can join Envistream Eduskill programs?", a: "School students (guided tracks), college students, fresh graduates, working professionals and career switchers. Most beginner programs need no prior coding — only curiosity and consistency." },
+  { q: "Who can join Envistream Eduskill programs?", a: "School students (guided tracks), college students, fresh graduates, working professionals and career switchers. Most beginner programs need no prior coding - only curiosity and consistency." },
   { q: "Are courses online or offline?", a: "Both. Choose Online Live (interactive with mentors), Offline classroom (select centres), or Hybrid. All include recordings, LMS access, assignments and doubt support." },
   { q: "Do I get a certificate? Is it verifiable?", a: "Yes. Every completed course/internship earns a verifiable certificate with a unique ID (e.g. EVS-2026-AI-000123). Employers can verify instantly on our Certificate Verification page." },
   { q: "Do you provide internships and placement support?", a: "Yes. Eligible learners get project-based internships, resume + LinkedIn reviews, mock interviews, referral drives and dedicated placement assistance. We never make false guaranteed-placement or salary promises." },
   { q: "What is the internship process?", a: "Apply online → screening/counselling → domain allocation → mentor-led projects → weekly reviews → assessment → certification + career guidance." },
   { q: "Can colleges partner with Envistream?", a: "Absolutely. We sign MoUs for internships, FDPs, AI workshops, certification programs and placement-oriented training. Visit Partner With Us to request a callback." },
-  { q: "Do you offer corporate training?", a: "Yes — AI & GenAI productivity, data analytics, cybersecurity awareness, Python, cloud and fully customized workshops for HR/L&D teams." },
+  { q: "Do you offer corporate training?", a: "Yes - AI & GenAI productivity, data analytics, cybersecurity awareness, Python, cloud and fully customized workshops for HR/L&D teams." },
   { q: "How do I pay? Are EMIs available?", a: "UPI, cards, net-banking and no-cost EMI options on most career programs. You can also download the brochure or talk to a counsellor before enrolling." },
 ];
 

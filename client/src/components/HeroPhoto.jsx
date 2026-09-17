@@ -4,7 +4,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 /**
  * Full-height hero photo. Drop the real photograph at
- * `public/hero-photo.jpg` — until then a branded cover shows
+ * `public/hero-photo.jpg` - until then a branded cover shows
  * so the hero never looks broken.
  */
 export default function HeroPhoto() {
@@ -35,7 +35,7 @@ export default function HeroPhoto() {
               </p>
               <p className="text-[13px] italic text-white/55 mt-1">To earn more, you must learn more</p>
               <p className="text-[11.5px] text-white/35 mt-4">
-                Photo slot — add <code className="text-white/60">hero-photo.jpg</code> to <code className="text-white/60">public/</code>
+                Photo slot - add <code className="text-white/60">hero-photo.jpg</code> to <code className="text-white/60">public/</code>
               </p>
             </div>
           </div>

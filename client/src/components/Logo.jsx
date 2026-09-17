@@ -19,7 +19,7 @@ export default function Logo({ dark = false, compact = false, className = "h-12"
         viewBox={compact ? "0 0 370 110" : "0 0 430 150"}
         className={`${className} w-auto`}
         role="img"
-        aria-label="Envistream Eduskill — To earn more, you must learn more"
+        aria-label="Envistream Eduskill - To earn more, you must learn more"
       >
         <g transform="translate(0 8)">
           <path d="M18 18 L52 52 L82 14 L95 22 L63 68 L35 68 L18 18 Z" fill={orange} />

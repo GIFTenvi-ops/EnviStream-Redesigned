@@ -6,7 +6,7 @@ import { reduced } from "../anim/ui";
 gsap.registerPlugin(ScrollTrigger);
 
 /**
- * ScrollText — GSAP word-by-word reveal on scroll.
+ * ScrollText - GSAP word-by-word reveal on scroll.
  * Each word shows in ~0.1s (wordDuration) with a small stagger,
  * so headings pop in fast as you scroll.
  *

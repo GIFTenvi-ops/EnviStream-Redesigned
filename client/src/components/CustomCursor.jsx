@@ -3,11 +3,11 @@ import gsap from "gsap";
 import { reduced, finePointer } from "../anim/ui";
 
 /**
- * CustomCursor — premium ring + dot cursor that trails the pointer and
+ * CustomCursor - premium ring + dot cursor that trails the pointer and
  * expands/softens over interactive elements. Desktop (fine pointer) only;
  * no-op on touch devices and for reduced-motion users.
  *
- * Mark any element `data-cursor="link"` to trigger the hover state —
+ * Mark any element `data-cursor="link"` to trigger the hover state -
  * e.g. <Link to="/courses" data-cursor="link">.
  */
 export default function CustomCursor() {

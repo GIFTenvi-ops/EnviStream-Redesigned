@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
 import Navbar from "./components/Navbar";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 import Footer from "./components/Footer";
 import EnquiryModal from "./components/EnquiryModal";
 import ChatbotPopup from "./components/ChatbotPopup";
@@ -15,6 +16,8 @@ import Home from "./pages/Home";
 import Courses from "./pages/Courses";
 import CourseDetail from "./pages/CourseDetail";
 import Placeholder from "./pages/Placeholder";
+import About from "./pages/About";
+import Placement from "./pages/Placement";
 import { isFirstBoot, reduced } from "./anim/ui";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -67,7 +70,7 @@ function Shell() {
       lenis = new Lenis({ duration: 1.15, smoothWheel: true });
       window.__lenis = lenis;
       lenis.on("scroll", ScrollTrigger.update);
-      // GSAP ticker time is in SECONDS, Lenis expects MILLISECONDS —
+      // GSAP ticker time is in SECONDS, Lenis expects MILLISECONDS -
       // without the x1000 the virtual clock crawls and wheel scroll dies.
       raf = (time) => lenis.raf(time * 1000);
       gsap.ticker.add(raf);
@@ -95,16 +98,17 @@ function Shell() {
       <ScrollRail />
       <ScrollToTop />
       <Navbar onEnquire={() => openEnquire()} booted={booted} />
-      <div className="flex-1">
+      <ThemeSwitcher />
+      <div className="flex-1 pt-[58px] lg:pt-[68px]">
         <PageTransition>
           <Routes>
             <Route path="/" element={<Home onEnquire={openEnquire} booted={booted} />} />
-            <Route path="/about" element={<Placeholder title="About Envistream Eduskill" eyebrow="Who we are" desc="Education, skill development, internships and career programs with trust, innovation and employability at the core." onEnquire={openEnquire} />} />
+            <Route path="/about" element={<About onEnquire={openEnquire} />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/courses/:slug" element={<CourseDetail onEnquire={openEnquire} />} />
-            <Route path="/internships" element={<Placeholder title="Internships & Projects" eyebrow="Learn by building" desc="4–12 week mentor-led internships across AI, Full Stack, Data, Cybersecurity, Cloud and Marketing — with projects, reviews and certification." onEnquire={openEnquire} />} />
+            <Route path="/internships" element={<Placeholder title="Internships & Projects" eyebrow="Learn by building" desc="4–12 week mentor-led internships across AI, Full Stack, Data, Cybersecurity, Cloud and Marketing - with projects, reviews and certification." onEnquire={openEnquire} />} />
             <Route path="/corporate" element={<Placeholder title="Corporate Training" eyebrow="For HR & L&D teams" desc="AI & GenAI productivity, data analytics, cybersecurity awareness, Python, cloud and fully customised workshops." onEnquire={openEnquire} />} />
-            <Route path="/placement" element={<Placeholder title="Placement & Career Programs" eyebrow="Career outcomes" desc="Job-oriented training, resume + LinkedIn reviews, mock interviews and referral drives. No false guarantees — real preparation." onEnquire={openEnquire} />} />
+            <Route path="/placement" element={<Placement onEnquire={openEnquire} />} />
             <Route path="/resources" element={<Placeholder title="Resources & Blog" eyebrow="Learn free" desc="AI resources, career guides, student resources, FAQs, videos and webinars." onEnquire={openEnquire} />} />
             <Route path="/contact" element={<Placeholder title="Contact & Counselling" eyebrow="Talk to us" desc="Enquiries, training requests, partnership requests and student counselling. We reply within 24 hours." onEnquire={openEnquire} />} />
             <Route path="/verify" element={<Placeholder title="Certificate Verification" eyebrow="Trust & credentials" desc="Enter a Certificate ID like EVS-2026-AI-000123 to verify name, program, duration and status instantly." onEnquire={openEnquire} />} />
@@ -116,7 +120,7 @@ function Shell() {
       <Footer onEnquire={() => openEnquire()} />
       <EnquiryModal open={modal} course={course} onClose={() => setModal(false)} />
       <ChatbotPopup onEnquire={openEnquire} />
-      {/* WhatsApp float — brand green */}
+      {/* WhatsApp float - brand green */}
       <a href="https://wa.me/919999999999" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp"
         className="fixed bottom-5 right-5 z-[60] w-14 h-14 grid place-items-center rounded-full bg-[#25D366]/95 hover:bg-[#25D366] backdrop-blur-xl border border-white/25 text-white text-2xl shadow-[0_16px_36px_-10px_rgba(37,211,102,.7)] hover:scale-110 transition-transform">✆</a>
     </div>

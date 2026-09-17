@@ -75,7 +75,7 @@ export function FeaturedCard({ compact = false, course = null, eyebrow = null })
 }
 
 /**
- * DESKTOP mega panel — 3 zones: categories | programs | per-category spotlight.
+ * DESKTOP mega panel - 3 zones: categories | programs | per-category spotlight.
  * Parent controls mounting; this component runs the GSAP enter animation
  * (opacity 0→1, y -10→0, scale .98→1, ~0.3s) and program-switch animation.
  */
@@ -83,7 +83,7 @@ export function MegaPanel({ onNavigate }) {
   const categories = useMemo(() => getActiveCategories(), []);
   const [activeId, setActiveId] = useState(categories[0]?.id);
   // `shownId` trails hover so outgoing cards can exit left before the
-  // incoming set enters from the right — never an instant swap.
+  // incoming set enters from the right - never an instant swap.
   const [shownId, setShownId] = useState(categories[0]?.id);
   const busy = useRef(false);
   const panelRef = useRef(null);
@@ -151,7 +151,7 @@ export function MegaPanel({ onNavigate }) {
   return (
     <div ref={panelRef} className="w-[980px] xl:w-[1080px] max-w-[calc(100vw-3rem)] rounded-2xl bg-white/75 backdrop-blur-2xl border border-white/60 shadow-[0_30px_80px_-20px_rgba(249,115,22,.3)] overflow-hidden">
       <div className="grid grid-cols-[270px_1fr_300px]">
-        {/* LEFT — categories */}
+        {/* LEFT - categories */}
         <div className="bg-slate-100/50 backdrop-blur border-r border-white/60 py-3 px-2.5" role="tablist" aria-label="Course categories">
           <p className="px-3 pt-1 pb-2 text-[11px] font-bold uppercase tracking-[.14em] text-slate-500">Browse by technology</p>
           {categories.map((cat) => {
@@ -185,7 +185,7 @@ export function MegaPanel({ onNavigate }) {
           })}
         </div>
 
-        {/* MIDDLE — programs of the hovered category only */}
+        {/* MIDDLE - programs of the hovered category only */}
         <div className="py-4 px-5 min-h-[430px] bg-white/40 backdrop-blur">
           <div className="flex items-center justify-between mb-2">
             <div>
@@ -223,7 +223,7 @@ export function MegaPanel({ onNavigate }) {
           </div>
         </div>
 
-        {/* RIGHT — spotlight follows the hovered category */}
+        {/* RIGHT - spotlight follows the hovered category */}
         <div className="border-l border-white/60 bg-slate-100/50 backdrop-blur p-4">
           <div ref={spotRef} key={activeCat?.id}>
             <FeaturedCard course={spotlight} eyebrow={`Featured · ${activeCat?.name}`} />
@@ -239,7 +239,7 @@ export function MegaPanel({ onNavigate }) {
 }
 
 /**
- * MOBILE accordion — Courses → Category → Programs. Smooth height animation.
+ * MOBILE accordion - Courses > Category > Programs. Smooth height animation.
  */
 export function MobileMegaMenu({ onNavigate }) {
   const categories = useMemo(() => getActiveCategories(), []);

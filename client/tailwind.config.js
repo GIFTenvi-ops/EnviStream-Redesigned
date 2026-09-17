@@ -17,7 +17,7 @@ export default {
           line: "#E2E8F0",
         },
         ink: { navy: "#1E293B", deep: "#0F172A", body: "#334155", muted: "#64748B" },
-        /* Professional system — blue primary surfaces, orange action accent,
+        /* Professional system - blue primary surfaces, orange action accent,
            white glass cards, gray text/borders */
         electric: { DEFAULT: "#2563EB", dark: "#1D4ED8" },
         accent: { DEFAULT: "#F97316", dark: "#EA580C", soft: "#FFF7ED" },

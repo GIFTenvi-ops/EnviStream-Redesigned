@@ -125,13 +125,13 @@ export const FEATURED_COURSE = {
   badge: "Admissions Open · 2026",
   name: "Artificial Intelligence Program",
   points: ["Python + ML Foundations", "Generative AI & RAG", "AI Agents + Capstone"],
-  desc: "Master AI foundations, neural networks and LLM applications — with internship, projects and verifiable certification.",
+  desc: "Master AI foundations, neural networks and LLM applications - with internship, projects and verifiable certification.",
   cta: "Explore Program",
   slug: "artificial-intelligence",
   stats: "6 Months · 8 Projects · Internship",
 };
 
-/* Legacy slug aliases — renamed catalogue entries keep resolving old URLs. */
+/* Legacy slug aliases - renamed catalogue entries keep resolving old URLs. */
 export const SLUG_ALIASES = {
   "web-application-security": "web-security",
 };

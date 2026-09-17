@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { reduced } from "../anim/ui";
 
 /**
- * PageTransition — soft navy overlay wipe on route change.
+ * PageTransition - soft navy overlay wipe on route change.
  * Skips the very first mount (PageLoader already owns that entrance)
  * and skips entirely for reduced-motion users.
  *

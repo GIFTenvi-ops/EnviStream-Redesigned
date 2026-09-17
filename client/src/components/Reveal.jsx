@@ -6,7 +6,7 @@ import { reduced } from "../anim/ui";
 gsap.registerPlugin(ScrollTrigger);
 
 /**
- * Reveal — professional scroll entrance.
+ * Reveal - professional scroll entrance.
  * Fades + rises with expo.out, subtle settle scale, no layout shift.
  * Backward compatible: <Reveal delay y className as>.
  */

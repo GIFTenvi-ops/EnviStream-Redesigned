@@ -7,12 +7,11 @@ import { MegaPanel, MobileMegaMenu } from "./MegaMenu";
 import { Magnetic, reduced } from "../anim/ui";
 
 const NAV = [
-  { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/courses", label: "Courses", mega: true },
   { to: "/internships", label: "Internships" },
   { to: "/corporate", label: "Corporate Training" },
-  { to: "/placement", label: "Career" },
+  { to: "/placement", label: "Placement" },
   { to: "/resources", label: "Resources" },
   { to: "/contact", label: "Contact" },
 ];
@@ -70,7 +69,7 @@ const NAV_PREVIEW = {
   "/placement": {
     eyebrow: "Career outcomes",
     title: "Placement assistance",
-    desc: "Real preparation — no false guarantees.",
+    desc: "Real preparation - no false guarantees.",
     links: [
       { label: "Job-Oriented Training", to: "/placement", desc: "Role-ready skills" },
       { label: "Resume + LinkedIn", to: "/placement", desc: "Expert reviews" },
@@ -164,7 +163,7 @@ export default function Navbar({ onEnquire, booted = true }) {
   const megaOpen = openMenu === "/courses";
   const miniData = openMenu && openMenu !== "/courses" ? NAV_PREVIEW[openMenu] : null;
 
-  // Scroll state: solid pill + progress bar — navbar always stays visible
+  // Scroll state: solid pill + progress bar - navbar always stays visible
   useEffect(() => {
     const onScroll = () => {
       const y = window.scrollY || 0;
@@ -173,7 +172,7 @@ export default function Navbar({ onEnquire, booted = true }) {
 
       setSolid(y > 24);
 
-      // progress bar — snappy 0.1s follow
+      // progress bar - snappy 0.1s follow
       if (progressRef.current) {
         gsap.to(progressRef.current, { scaleX: p, duration: 0.1, ease: "power1.out", overwrite: "auto" });
       }
@@ -385,16 +384,16 @@ export default function Navbar({ onEnquire, booted = true }) {
 
   return (
     <>
-      {/* top utility strip — deep blue, collapses once you scroll */}
+      {/* top utility strip - deep blue, collapses once you scroll */}
       <div
-        className={`hidden md:block overflow-hidden bg-[#0d171d]/85 backdrop-blur-xl text-[#e1e6e9] text-[12.5px] font-poppins transition-all duration-500 border-b border-[#47606a]/40 ${
+        className={`hidden overflow-hidden bg-[#0d171d]/85 backdrop-blur-xl text-[#e1e6e9] text-[12.5px] font-poppins transition-all duration-500 border-b border-[#47606a]/40 ${
           solid ? "max-h-0 opacity-0" : "max-h-10 opacity-100"
         }`}
       >
         <div className="container-x flex items-center justify-between py-2">
           <p className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-[#d4a85d] animate-pulse" />
-            Admissions open — 2026 batches · Internships · Corporate training
+            Admissions open - 2026 batches · Internships · Corporate training
           </p>
           <div className="flex items-center gap-5">
             <Link to="/verify" className="flex items-center gap-1.5 hover:text-white"><FiShield /> Verify Certificate</Link>
@@ -404,21 +403,21 @@ export default function Navbar({ onEnquire, booted = true }) {
         </div>
       </div>
 
-      {/* floating pill header — professional deep blue */}
-      <div className="sticky top-2 sm:top-3 z-50 px-2 sm:px-4 font-poppins">
+      {/* floating pill header - professional deep blue */}
+      <div className="fixed inset-x-0 top-0 z-50 font-poppins">
         <header
           ref={headerRef}
-          className="relative max-w-7xl mx-auto"
+          className="relative w-full"
         >
           <div
             ref={floatRef}
-            className={`relative rounded-2xl border backdrop-blur-2xl transition-all duration-500 ${
+            className={`relative rounded-none border-x-0 border-t-0 backdrop-blur-2xl transition-all duration-500 ${
               solid
                 ? "bg-[#0d171d]/90 border-[#496170]/50 shadow-[0_20px_60px_-16px_rgba(8,51,61,.65)]"
                 : "bg-[#101d25]/85 border-[#496170]/50 shadow-[0_16px_44px_-20px_rgba(8,51,61,.55)]"
             }`}
           >
-            {/* scroll progress — orange action accent on blue */}
+            {/* scroll progress - orange action accent on blue */}
             <span className="absolute top-2 left-5 right-5 h-[2px] rounded-full bg-transparent overflow-hidden" aria-hidden>
               <span
                 ref={progressRef}
@@ -435,7 +434,7 @@ export default function Navbar({ onEnquire, booted = true }) {
             >
               <Logo dark className={solid ? "h-9" : "h-11"} />
 
-              {/* DESKTOP NAV — every option shows its data on hover / touch */}
+              {/* DESKTOP NAV - every option shows its data on hover / touch */}
               <nav
                 className="hidden lg:flex items-center gap-1 rounded-full p-1 backdrop-blur-xl transition-colors duration-500 border border-[#496170]/40 bg-[#0d171d]/60"
                 aria-label="Primary"
@@ -493,7 +492,7 @@ export default function Navbar({ onEnquire, booted = true }) {
             )}
           </div>
 
-          {/* MOBILE panel — floating card under the pill */}
+          {/* MOBILE panel - floating card under the pill */}
           <div
             ref={mobileRef}
             data-lenis-prevent
@@ -502,13 +501,12 @@ export default function Navbar({ onEnquire, booted = true }) {
             }`}
           >
             <div className="rounded-2xl border border-white/60 bg-white/70 backdrop-blur-2xl shadow-[0_24px_60px_-20px_rgba(249,115,22,.3)] px-3 py-3 space-y-1 font-poppins">
-              <NavLink data-mnav to="/" end className={({ isActive }) => `block px-4 py-3 rounded-xl font-bold text-[14px] ${isActive ? "bg-[#eaf6f8] text-[#0d6b7a]" : "text-[#22313a]"}`}>Home</NavLink>
               <NavLink data-mnav to="/about" className={({ isActive }) => `block px-4 py-3 rounded-xl font-bold text-[14px] ${isActive ? "bg-[#eaf6f8] text-[#0d6b7a]" : "text-[#22313a]"}`}>About</NavLink>
 
               <MobileMegaMenu onNavigate={() => setMobileOpen(false)} />
 
-              {[["Internships", "/internships"], ["Corporate Training", "/corporate"], ["Career", "/placement"], ["Resources", "/resources"], ["Contact", "/contact"], ["Partner With Us", "/partner"], ["Verify Certificate", "/verify"]].map(([label, to]) => (
-                <NavLink data-mnav key={to + label} to={to} className={({ isActive }) => `block px-4 py-3 rounded-xl font-bold text-[14px] ${isActive ? "bg-[#eaf6f8] text-[#0d6b7a]" : "text-[#22313a] hover:bg-white/60"}`}>{label}</NavLink>
+                {[["Internships", "/internships"], ["Corporate Training", "/corporate"], ["Placement", "/placement"], ["Resources", "/resources"], ["Contact", "/contact"], ["Partner With Us", "/partner"], ["Verify Certificate", "/verify"]].map(([label, to]) => (
+                  <NavLink data-mnav key={to + label} to={to} className={({ isActive }) => `block px-4 py-3 rounded-xl font-bold text-[14px] ${isActive ? "bg-[#eaf6f8] text-[#0d6b7a]" : "text-[#22313a] hover:bg-white/60"}`}>{label}</NavLink>
               ))}
               <button data-mnav onClick={() => { setMobileOpen(false); onEnquire?.(); }} className="w-full mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-[#d4a85d] backdrop-blur border border-[#f0ddac]/60 text-[#0f1d24] font-bold px-5 py-3.5 text-[14px] shadow-[0_14px_30px_-10px_rgba(212,168,93,.6)]">
                 Apply Now <FiArrowRight />
